@@ -1,0 +1,23 @@
+{{define "title"}}Form Page{{end}}
+
+{{define "main"}}
+    <div>
+        <h2>Form</h2>
+        <form method="post" action="/form">
+            <label for="name">Title</label>
+            <input type="text" name="name" id="name" />
+            <br />
+
+            <label for="address">Address</label>
+            <input type="text" name="address" id="address" />
+            <br />
+
+            <button type="submit">Submit</button>
+        </form>
+        <br />
+
+        <a href="/" rel="noopener noreferrer">Go to Home page</a>
+        <br />
+        <a href="/hello" rel="noopener noreferrer">Go to Hello page</a>
+    </div>
+{{end}}
